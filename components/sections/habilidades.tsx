@@ -5,7 +5,7 @@ export default function Habilidades() {
       const skills = {
     frontend: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'TailwindCSS', 'Shadcn/ui', 'Vite.js'],
     backend: ['Node.js', 'RESTful APIs', 'Prisma', 'Express', 'PostgreSQL', 'MongoDB'],
-    tools: ['Git', 'Vite', 'Figma', 'VS Code', 'Docker', 'Jest', 'Webpack',]
+    tools: ['Git', 'Figma', 'VS Code', 'Docker', 'Jest',]
   };
 
     return (

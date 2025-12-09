@@ -1,10 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Code, Briefcase, User, FileText, Sparkles, Send } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 
 import Sobre from '@/components/sections/sobre'
 import Projetos from '@/components/sections/projetos'
@@ -44,7 +41,7 @@ export default function Portfolio() {
       <section className="flex justify-center pt-40">
         <div className="max-w-7xl text-center">
           <div className="relative inline-block mb-8">
-            <div className="w-40 h-40 mx-auto bg-gray-700 rounded-3xl flex items-center justify-center text-7xl shadow-2xl shadow-cyan-500/30 transform hover:scale-105 transition-transform">
+            <div className="w-40 h-40 mx-auto bg-white/5 border-white/10 backdrop-blur-xl rounded-3xl flex items-center justify-center text-7xl shadow-2xl shadow-cyan-500/30 transform hover:scale-105 transition-transform">
               👨‍💻
             </div>
             <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-cyan-600 to-cyan-900 rounded-full blur-2xl opacity-60 animate-pulse"></div>

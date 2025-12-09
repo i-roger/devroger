@@ -72,7 +72,7 @@ export default function Contato() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/20 backdrop-blur-xl">
+                <Card className="bg-white/5 border-white/10 backdrop-blur-xl">
                   <CardContent className="p-6 text-center">
                     <p className="text-slate-300 leading-relaxed">
                       💼 <strong className="text-white">Disponível</strong> para projetos freelance e oportunidades full-time

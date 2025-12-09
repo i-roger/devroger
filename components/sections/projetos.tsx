@@ -6,16 +6,6 @@ export default function Projetos() {
     const projects = [
     {
       id: 1,
-      title: 'Rogertech',
-      description: 'Landing page profissional apresentando meus serviços, projetos desenvolvidos e formulário para contato direto com clientes.',
-      technologies: ['Next.js', 'TypeScript', 'TailWindCSS', 'Swiper'],
-      image: <MonitorSmartphone color='white' className='w-16 h-16'/>,
-      github: 'https://github.com/i-roger/rogertech',
-      demo: 'https://rogertech.vercel.app/inicio',
-      gradient: 'from-emerald-500 to-teal-500'
-    },
-    {
-      id: 2,
       title: 'Raiolaranja : Seu companheiro nas corridas!',
       description: 'Aplicativo interativo para planejamento de treino de corrida com previsão de tempo, conversões de pace, entre outras ferramentas que facilitam a vida do corredor. Seja na esteira ou na rua!',
       technologies: ['React', 'Next.js', 'TypeScript', 'Prisma', 'TailWindCSS', 'better-auth'],
@@ -23,6 +13,16 @@ export default function Projetos() {
       github: 'https://github.com/i-roger/raio-webapp',
       demo: 'https://raiolaranja.vercel.app',
       gradient: 'from-orange-500 to-red-500'
+    },
+    {
+      id: 2,
+      title: 'Rogertech',
+      description: 'Landing page profissional apresentando meus serviços, projetos desenvolvidos e formulário para contato direto com clientes.',
+      technologies: ['Next.js', 'TypeScript', 'TailWindCSS', 'Swiper'],
+      image: <MonitorSmartphone color='white' className='w-16 h-16'/>,
+      github: 'https://github.com/i-roger/rogertech',
+      demo: 'https://rogertech.vercel.app/inicio',
+      gradient: 'from-emerald-500 to-teal-500'
     },
     {
       id: 3,
