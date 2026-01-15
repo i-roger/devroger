@@ -40,12 +40,12 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section className="flex justify-center pt-40">
         <div className="max-w-7xl text-center">
-          <div className="relative inline-block mb-8">
+          {/* <div className="relative inline-block mb-8">
             <div className="w-40 h-40 mx-auto bg-white/5 border-white/10 backdrop-blur-xl rounded-3xl flex items-center justify-center text-7xl shadow-2xl shadow-cyan-500/30 transform hover:scale-105 transition-transform">
               👨‍💻
             </div>
             <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-cyan-600 to-cyan-900 rounded-full blur-2xl opacity-60 animate-pulse"></div>
-          </div>
+          </div> */}
           
           <div className="mb-6">
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-full text-cyan-400 text-sm mb-6">
@@ -55,7 +55,7 @@ export default function Portfolio() {
 
           <h2 className="text-4xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-white mb-2">Matheus Roger</span>
-            <a href="#teste" className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-500 bg-clip-text text-transparent">
+            <a className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-500 bg-clip-text text-transparent">
               Desenvolvedor
             </a>
           </h2>
@@ -66,14 +66,19 @@ export default function Portfolio() {
           </p>
           
           <div className="flex gap-4 justify-center mb-10">
+            <a href={`mailto:${socialLinks.email}`}>
             <Button className="cursor-pointer bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all">
               <Mail className="mr-2 h-5 w-5" />
-              Vamos Conversar
+              Enviar email
             </Button>
+            </a>
+
+            <a href={socialLinks.linkedin}>
             <Button className="cursor-pointer bg-white/5 hover:bg-white/10 text-white px-8 py-6 text-lg rounded-xl border border-white/10 backdrop-blur-sm">
-              <FileText className="mr-2 h-5 w-5" />
-              Baixar CV
+              <Linkedin className="h-6 w-6 text-white" />
+              Conversar pelo LinkedIn
             </Button>
+            </a>
           </div>
           
           <div className="flex gap-6 justify-center">
