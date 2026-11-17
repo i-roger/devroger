@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio — Matheus Roger
 
-## Getting Started
+Landing page pessoal com design minimalista, tipografia JetBrains Mono e animações de texto e de componentes.
 
-First, run the development server:
+## Stack
+
+- React 19 + TypeScript
+- Vite 8
+- Tailwind CSS 4
+- Motion (Framer Motion) para as animações
+- Lucide React para ícones
+- JetBrains Mono via Fontsource (self-hosted, sem depender do Google Fonts)
+
+## Como rodar
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse o endereço exibido no terminal (normalmente `http://localhost:5173`).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build de produção
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run preview
+```
 
-## Learn More
+O resultado fica em `dist/` e pode ser publicado na Vercel, Netlify ou qualquer hospedagem estática.
 
-To learn more about Next.js, take a look at the following resources:
+## Estrutura
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+  components/
+    ui/            # Reveal, SplitText, Typewriter, Counter, SectionHeading
+    Header.tsx     # navegação fixa + menu mobile animado
+    Hero.tsx       # headline animada, typewriter e terminal
+    Marquee.tsx    # faixa infinita de tecnologias
+    About.tsx      # sobre, stack e informações
+    Projects.tsx   # lista expansível de projetos
+    ProjectVisual.tsx # previews em CSS/SVG de cada projeto
+    Experience.tsx # timeline + certificações expansíveis
+    Contact.tsx    # contato, copiar e-mail e redes
+    Footer.tsx
+  data.ts          # todo o conteúdo (projetos, experiências, links)
+  index.css        # tema Tailwind, fontes, grão, marquee, utilitários
+```
